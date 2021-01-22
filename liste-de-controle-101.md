@@ -1,13 +1,12 @@
 # Liste de contrôle 101
 
 ## Structure de répertoires et nomenclatures
-- [ ] Le projet est déposé dans le dossier __integration1__ de l'étudiant sur le serveur timunix2
 - [ ] Les noms de dossier sont signifiants et n'ont pas de majuscules, d'espaces ou de caractères spéciaux
 - [ ] Les noms de fichier sont signifiants et n'ont pas de majuscules, d'espaces ou de caractères spéciaux
 - [ ] La page se nomme _index.html_ et se situe à la racine du site
 - [ ] La nomenclature des fichiers est systématique
 - [ ] La nomenclature des images est systématique (section associée, fonction, etc.)
-- [ ] Tous les noms de classe sont signifiants et utilise une nomenclature constante
+- [ ] Tous les noms de classe sont signifiants et utilisent une nomenclature constante
 
 
 ## Favicon
@@ -19,7 +18,7 @@
 ## HTML 
 
 ### Contenu minimal de l'élément head 
-- [ ] Doctype: La déclaration du type de document est HTML5 est présent 
+- [ ] Doctype: La déclaration du type de document est présent 
 - [ ] L'élément `html` inclut l'attribut `lang="fr"` (ou "en" si le texte est en anglais). 
 - [ ] L'élément `charset` définit l'encodage du texte en UTF-8
 - [ ] Les éléments `meta` (`description`, `keywords`, `author`) sont présents
