@@ -8,7 +8,7 @@ Ensemble de règles et bonnes pratiques de développement Web
 [Ressources et liens](ressources-et-liens.md)     
 
 ## Crédits 
-Une partie des contenus présents dans ce répertoire est inspiré du [Guide de codage de l'agence AlsaCréations](https://github.com/alsacreations/guidelines). 
+Une partie des contenus présents dans ce répertoire se réfère au [Guide de codage de l'agence AlsaCréations](https://github.com/alsacreations/guidelines). 
 
 Parmi les autres sources: 
 - le site pédagogique https://www.hautemontagne.ca/ 
