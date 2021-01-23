@@ -24,7 +24,8 @@
 - [ ] Les éléments `meta` (`description`, `keywords`, `author`) sont présents
 - [ ] L'élément `meta` viewport est présent et complet 
 - [ ] L'élément `title` est présent et placé après l'élément `charset` 
-- [ ] Le contenu des éléments title est écrit sans faute
+- [ ] Le contenu des éléments `title` est écrit sans faute
+- [ ] L'élément `link` est bien utilisé pour relier la feuille de styles du document.
 
 ### Structure et sémantique
 - [ ] Les éléments HTML sont utilisés en fonction de leur signification
