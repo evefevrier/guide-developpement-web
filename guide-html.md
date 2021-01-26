@@ -27,7 +27,7 @@ La langue de la page est systématiquement renseignée via un attribut dans l’
 
 ## Encodage
 
-L’encodage du document (en UTF-8) est systématiquement renseigné via un élément meta dans le `<head>` :
+L’encodage du document (en UTF-8) est systématiquement renseigné via un élément meta placé dans le `<head>` avant le title:
 
 ```html
 <meta charset="UTF-8" />
@@ -49,7 +49,7 @@ Pour une adaptation du site web vers les terminaux mobiles, l’élément `<meta
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-**_Note : Les syntaxes empêchant l’agrandissement des contenus par le visiteur seront proscrites (maximum-scale=1, user-scalable=no, etc.)._**
+**_Note : Les syntaxes empêchant l’agrandissement des contenus par le visiteur sont proscrites (maximum-scale=1, user-scalable=no, etc.)._**
 
 ## Favicon
 
@@ -74,7 +74,7 @@ La structure globale préconisée est celle-ci :
 - `<nav id="navigation" role="navigation">` : navigation principale
 - `<form id="search" role="search">` : recherche principale
 
-__En savoir plus sur la sémantique structurelle__  
+__En savoir plus sur la sémantique structurelle__
 https://www.w3.org/WAI/tutorials/page-structure/
 
 
