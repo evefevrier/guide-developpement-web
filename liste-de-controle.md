@@ -1,5 +1,5 @@
 
-# Liste de contrôle 201
+# Liste de contrôle (version production)
 
 Liste de bonnes pratiques et points à prendre en compte avant/durant/après l'élaboration d'un projet web.
 ___

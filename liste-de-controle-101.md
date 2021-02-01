@@ -1,4 +1,4 @@
-# Liste de contrôle 101
+# Liste de contrôle 101 (pour TP long de Intégration I)
 
 ## Structure de répertoires et nomenclatures
 - [ ] Les noms de dossier sont signifiants et n'ont pas de majuscules, d'espaces ou de caractères spéciaux
@@ -63,7 +63,8 @@
 - [ ] La feuille de styles est valide selon https://jigsaw.w3.org/css-validator/
 
 ### Lisibilité
-- [ ] La feuille de style est ordonnée en fonction des affinités et de la hiérarchie du contenu La feuille de style est écrite lisiblement selon les règles établies
+- [ ] La feuille de style est ordonnée en fonction des affinités et de la hiérarchie du contenu 
+- [ ] La feuille de style est écrite lisiblement  
 - [ ] La feuille de style est commentée
 - [ ] Les polices importées de Google Fonts sont fonctionnelles
 
