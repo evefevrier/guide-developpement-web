@@ -53,14 +53,38 @@ On prendra soin de maintenir à jour cette table des matières de sorte qu'on pu
 les titres pour naviguer vers cette section du fichier grâce à la commande *Find*.      
 
 Exemple:  
-`/* Table des matières */`      
+`/*** TABLE DES MATIÈRES ***/`      
 `/* POLICES LIÉES */`     
 `/* UTILITAIRES */`   
 `/* CHARTE TYPOGRAPHIQUE */`     
 `/* NAVIGATION */`   
 `/* HYPERLIENS */`    
-`/* GRILLE DE MISE EN PAGE */`    
+`/* GRILLE DE MISE EN PAGE */` 
 
+La forme des commentaires structurants et de la table des matières peut être adaptée.     
+Par exemple, si on préfère les commentaires structurants en bas de casse avec une ligne de soulignement
+comme ceci:
+```css
+/* Utilitaires
+   ========================================================================== */
+```
+La table des matières ressemblera plutôt à cela:
+```css
+/**
+ * @author Prenom Nom <courriel>
+ *
+ * TABLE DES MATIERES
+ *
+ * Normalize (au lieu du reset)
+ * Utilitaires
+ * Charte typographique
+ * Grilles de mise en page
+ * Hyperliens et interactivite
+ *
+ */
+```
+L'important est de reprendre avec le même orthographe et choix de casse les commentaires structurants 
+dans la table des matières de sorte que la fonction *Find* puisse être utilisée.
 
 ## Sélection des éléments
 
@@ -71,11 +95,42 @@ les modifications ultérieures ou dans des contextes différents (Responsive).
 Privilégier au maximum l'usage de [**classes**](http://www.drinchev.com/blog/css-with-only-class-names/) plutôt 
 que d'écrire des sélecteurs basés sur le type des éléments ou leur `id`.
 
-Le sélecteur CSS doit être _unique_ si cela est possible (une seule classe). 
-
 
 ### Noms de classes (BEM)
-À compléter.
+
+Nous nous inspirerons de la méthode BEM (Bloc-Élément-Modificateur) pour nos noms de classes.  
+
+#### BLOCS  
+Un bloc pourrait se définir comme un composant d'interface.  
+Par exemples: un menu, une zone de recherche, un accordéon, une section, un encadré...  
+
+La classe du __bloc__ est appliquée sur l'élément HTML parent qui contient le composant.
+
+Exemple: ``.menu`` ou ``.nav`` sera appliqué sur la balise ``nav`` de la navigation principale.
+
+#### ÉLÉMENTS
+Les __éléments__ sont des balises contextuelles(descendantes) à un __bloc__.  
+La syntaxe consiste à séparer le nom du __bloc__ du nom d'__élément__ par 2 caractères de soulignement: __
+
+Exemples: ``.nav__list`` (balise ``ul``), ``.nav__listItem`` (balise ``li``), ``.nav__link`` (balise ``a``)
+
+#### MODIFICATEURS 
+Un modificateur indique un changement d'état d'un __bloc__ ou d'un __élément__. 
+La syntaxe consiste à séparer le nom __bloc__ ou le nom __bloc__élément__ de son modificateur, par 2 tirets: --
+Les modificateurs sont surtout utiles pour l'interactivité.
+
+Exemples:       
+``.nav__link--actif`` pour styler différemment l'item de menu correspondant à la section en consultation     
+``.nav--footer`` pour la balise nav contenant la répétition de la navigation principale dans le pied de page.     
+
+#### Séparateur
+Dans le cas où le nom du __bloc__ ou le nom de l'__élément__ peut difficilement être résumé de manière significative 
+par un seul mot, on privilégiera le *CamelCase* plutôt qu'un tiret pour éviter la confusion entre simple tiret 
+et les double-tirets des __modificateurs__.
+
+Exemple:       
+``.nav__listItem`` plutôt que ``.nav__list-item`` 
+
 
 
 ## Mobile d'abord (Mobile First)
@@ -96,3 +151,52 @@ Exemple:
 }
 ```
 
+
+## Principe de double-classe
+Si on a besoin d'appliquer des styles plus spécifiques à un élément qui partage des traits commun 
+avec d'autres éléments, on pourra créer un modificateur pour cet élément et lui appliquer la classe
+commune et la classe de modificateur plutôt que de répéter les traits communs dans la classe modificateur
+
+Exemple:   
+La navigation dans le bandeau d'entête  
+```html
+     <nav class="nav nav--header" role="navigation">
+         <a class="logo" href="index.html">
+             <img src="images/logo-final.png" alt="Accueil (logo À la manière de)">
+         </a>
+         <ul class="nav__list nav__list--subList">
+             <li class="nav__listItem"><a class="nav__link nav__link--active"
+                                          href="artistes.html">Artistes</a></li>
+             <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
+             <li class="nav__listItem"><a class="nav__link" href="ressources.html">Ressources</a></li>
+             <li class="nav__listItem"><a class="nav__link" href="a-propos.html">À&nbsp;propos</a></li>
+         </ul>
+     </nav>
+```
+La navigation dans le pied de page  
+```html
+    <nav class="nav nav--footer">
+        <ul class="nav__list">
+            <li class="nav__listItem"><a class="nav__link nav__link--active" href="artistes.html">Artistes</a></li>
+            <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
+            <li class="nav__listItem"><a class="nav__link" href="ressources.html">Ressources</a></li>
+            <li class="nav__listItem"><a class="nav__link" href="a-propos.html">À&nbsp;propos</a></li>
+        </ul>
+    </nav>
+```  
+Utilisation dans les styles CSS, des modificateurs et du principe de double classe    
+```css
+.nav{
+    font-family: 'News Cycle', sans-serif;
+    text-transform: uppercase;
+}
+.nav--header,
+.nav__list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav--footer{
+    background-color: black;
+}
+```

@@ -65,8 +65,7 @@ Les éléments HTML5 `<header>`, `<article>`, `<main>`, `<footer>`, `<aside>`, `
 
 La structure globale préconisée est celle-ci :
 
-- `<body>` : corps de page et du site web
-- `<div id="layout-page">` : sous-conteneur optionnel. Par exemple pour centrer.
+- `<body>` : corps de page et du site web 
 - `<header id="header" role="banner">` : entête global, comportant souvent la navigation et des éléments qui se retrouvent en commun sur (quasiment) toutes les pages
 - `<main id="main" role="main">` : conteneur général du contenu principal, typiquement ce qui n'est pas dans header et footer
 - `<footer id="footer" role="contentinfo">` : pied de page global comportant des éléments qui se retrouvent en commun sur (quasiment) toutes les pages  
