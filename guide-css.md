@@ -184,7 +184,10 @@ La navigation dans le pied de page
         </ul>
     </nav>
 ```  
-Utilisation dans les styles CSS, des modificateurs et du principe de double classe    
+
+Utilisation dans les styles CSS:
+- des modificateurs (nav--header, nav--footer) 
+- et du principe de double classe (entre nav et les modificateurs)   
 ```css
 .nav{
     font-family: 'News Cycle', sans-serif;
