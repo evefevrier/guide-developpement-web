@@ -164,7 +164,7 @@ La navigation dans le bandeau d'entête
          <a class="logo" href="index.html">
              <img src="images/logo-final.png" alt="Accueil (logo À la manière de)">
          </a>
-         <ul class="nav__list nav__list--subList">
+         <ul class="nav__list">
              <li class="nav__listItem"><a class="nav__link nav__link--active"
                                           href="artistes.html">Artistes</a></li>
              <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
