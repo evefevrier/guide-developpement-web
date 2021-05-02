@@ -4,7 +4,7 @@ Ensemble de règles et bonnes pratiques de développement Web
 [Guide HTML](guide-html.md)    
 [Guide CSS](guide-css.md)  
 [Hello World de Github - en français](github-hello-world-fr.md)     
-[Liste de contrôle](liste-de-controle-201.md)     
+[Liste de contrôle](liste-de-controle.md)     
 [Ressources et liens](ressources-et-liens.md)     
 
 ## Crédits 
