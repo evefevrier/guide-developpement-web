@@ -12,9 +12,16 @@ ___
 | Il y a un lien vers un flux RSS valide si un CMS est utilisé | * |
 | Les préfixes navigateurs CSS sont gérés automatiquement (autoprefixer) | * |
 | Un reset CSS est appliqué | * |
-| Internet Explorer est géré en mode de compatibilité standard | * |
+| Internet Explorer est géré en mode de compatibilité standard (Voir note) | * |
 | Les balises HTML sont utilisées de manière sémantique | ** |
 | Le média print est pris en compte pour les contenus imprimables | * |
+
+Note:  
+```
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<![endif]-->
+```
 
 ## Webdesign
 
