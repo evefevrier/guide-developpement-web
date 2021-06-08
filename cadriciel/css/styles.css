@@ -17,23 +17,23 @@
 
 /* Normalize
    ========================================================================== */
-@import url(_normalize.css);
+@import url(normalize.css);
 
 /* Utilitaires
    ========================================================================== */
-@import url(_utilitaires.css);
+@import url(utilitaires.css);
 
 /* Charte typographique
    ========================================================================== */
-@import url(_typo.css);
+@import url(typo.css);
 
 /* Menu
    ========================================================================== */
-@import url(_menu.css);
+@import url(menu.css);
 
 /* Grille
    ========================================================================== */
-@import url(_grille.css);
+@import url(grille.css);
 
 /* Mise en page
    ========================================================================== */
