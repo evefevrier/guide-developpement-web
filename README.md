@@ -5,7 +5,9 @@ Ensemble de règles et bonnes pratiques de développement Web
 [Guide CSS](guide-css.md)  
 [Hello World de Github - en français](github-hello-world-fr.md)     
 [Liste de contrôle](liste-de-controle.md)     
-[Ressources et liens](ressources-et-liens.md)     
+[Ressources et liens](ressources-et-liens.md)
+  
+[Cadriciel](cadriciel/index.html)
 
 ## Crédits 
 Une partie des contenus présents dans ce répertoire se réfère au [Guide de codage de l'agence AlsaCréations](https://github.com/alsacreations/guidelines). 
