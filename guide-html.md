@@ -7,7 +7,8 @@
 - Séparer les noms des fichiers, des images des classes et id CSS par des tirets (`.slide-info`, `styles-ie.css`, `jquery-2.0.min.css`, etc), sauf convention contraire apportée par le client.
 - Les noms d'éléments et des attributs sont rédigés en minuscules,
 - Les éléments sont imbriqués correctement,
-- L'usage des guillemets doubles est préconisé autour des valeurs d’attributs (ex. `class="fruit"`) ainsi que les simples quotes dans les autres langages JavaScript, PHP (ex. `alert('blup');`) de manière à faciliter les imbrications (ex. `alert('<p class="fruit">plop</p>');`)
+- L'usage des guillemets doubles est préconisé autour des valeurs d’attributs (ex. `class="fruit"`) 
+- L'usage des guillemets simples est privilégié dans les langages de programmation (ex. `alert('burp ou schlürlf');`) de manière à faciliter les imbrications (ex. `alert('<p class="fruit">plop</p>');`)
 
 ## Doctype
 
