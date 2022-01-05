@@ -29,7 +29,7 @@
 
 ## Banque d'images 
 
-  - https://search.creativecommons.org/
+  - https://search.creativecommons.org/ Un outil de recherche  
   - https://pixabay.com/ 
   - https://www.pexels.com/ 
   - https://unsplash.com/ 
