@@ -2,7 +2,8 @@
 
   
 ## HTML5
-  - https://html.spec.whatwg.org/
+  - https://developer.mozilla.org/fr/docs/Web/HTML/Element (en français)
+  - https://html.spec.whatwg.org/ (version anglaise des spécifications - Living Standard)
  
 ---
 
@@ -36,7 +37,8 @@
   - http://www.publicdomainpictures.net 
   - https://www.reshot.com/ 
   - http://picmelon.com/ 
-  - https://fr.123rf.com/ 
+  - https://fr.123rf.com/ [i1_enonce_projetfinal_a2021.pdf](https://github.com/evefevrier/guide-developpement-web/files/7817075/i1_enonce_projetfinal_a2021.pdf)
+
   - https://www.istockphoto.com/fr 
 
 ## Contenus de remplissage
