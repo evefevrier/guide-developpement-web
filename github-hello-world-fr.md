@@ -60,7 +60,11 @@ Lorsque vous créez une branche hors de la *__main__*, vous faites une copie, ou
 Il est utile de savoir que si quelqu’un d’autre a apporté des modifications à la branche *main* pendant que vous travailliez sur votre branche, vous pourrez toujours aller chercher ces mises à jour pour qu'elles s'incorporent à votre branche de travail en faisant un *__pull__*. 
 
 Ce diagramme montre:
-- La branche *__main__* (*master branch*)
+- La branche principale, le tronc selon la métaphore de l'arbre qui est automatiquement nommée *__main__*..
+Notez que l'image ci-dessous et dans la documentation elle est encore souvent désignée de son ancien nom: **__master__**.
+C'est à l'automne 2020 que [Github a changé le terme "master" pour "main" afin d'éliminer toute connotation possible avec l'esclavage](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/).
+
+
 - Une nouvelle branche appelée *feature* ou fonctionnalite 
 (parce que nous élaborons une nouvelle « fonctionnalité » sur cette branche) 
 - Les étapes d’élaboration de cette nouvelle fonctionnalité avant qu’elle ne soit fusionné à la branche *__main__*
