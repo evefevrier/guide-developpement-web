@@ -1,4 +1,4 @@
-# Liste de contrôle 101 (pour TP long de Intégration I)
+# Liste de contrôle 101 
 
 ## Structure de répertoires et nomenclatures
 - [ ] Les noms de dossier sont signifiants et n'ont pas de majuscules, d'espaces ou de caractères spéciaux
