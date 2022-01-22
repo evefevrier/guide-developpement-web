@@ -8,12 +8,11 @@ ___
 
 |Critère|Priorité|
 | ------------- | ------------- |
-| Chaque page comporte un titre unique et pertinent (favorise le référencement et l’utilisabilité/accessibilité) | *** |
-| Il y a un lien vers un flux RSS valide si un CMS est utilisé | * |
-| Les préfixes navigateurs CSS sont gérés automatiquement (autoprefixer) | * |
-| Un reset CSS est appliqué | * |
-| Internet Explorer est géré en mode de compatibilité standard (Voir note) | * |
+| Chaque page comporte un titre unique et pertinent (favorise le référencement et l’utilisabilité/accessibilité) | *** | 
 | Les balises HTML sont utilisées de manière sémantique | ** |
+| Un reset CSS est appliqué | * |
+| Les préfixes navigateurs CSS sont gérés automatiquement (autoprefixer) | * | 
+| Internet Explorer est géré en mode de compatibilité standard (Voir note) | * |
 | Le média print est pris en compte pour les contenus imprimables | * |
 
 Note:  
@@ -45,7 +44,7 @@ Note:
 
 |Critère|Priorité|
 | ------------- | ------------- |
-| Chaque page comporte une section head avec des balises meta description et keywords et autres indications pertinentes | * |
+| Chaque page comporte une section head avec des balises meta description et keywords | * |
 
 ## Accessibilité
 
@@ -77,7 +76,7 @@ Note:
 | Les liens internes sont valides | ** |
 | Le site fait appel à des technologies open-source et interopérables | ** |
 | Une icône favicon est présente à la racine du site | ** |
-| La qualité du code HTML, CSS et JavaScript est vérifiée à l’aide d’outils automatiques (Exemple: ESLint) | ** |
+| La qualité du code HTML, CSS et JavaScript est vérifiée à l’aide d’outils                                     (Exemples: validateurs, ESLint) | ** |
 | Les pages sont testées sur les navigateurs bureau et mobiles principaux | ** |
 | L'orthographe et la grammaire sont vérifiées | * |
 
