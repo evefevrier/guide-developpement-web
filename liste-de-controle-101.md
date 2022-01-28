@@ -49,7 +49,7 @@
 ---
 ## Accessibilité
 
-- [ ] Les éléments `a` contiennent du texte (libellé du lien) 
+- [ ] Les éléments `a` contiennent du texte (libellé du lien) qu'un lecteur vocal PEUT lire. 
 - [ ] Toutes les balises `img` ont un attribut `alt` avec un contenu pertinent
 
 ---

@@ -1,9 +1,10 @@
 # Guide HTML
+Ce document fait partie du Guide de développement Web servant de base au style de codage dans le programme TIMCSF.ca.
 
 
 ## Généralités
 
-- L’encodage des fichiers et des bases de données doit se faire en UTF-8. 
+- L’encodage des fichiers doit se faire en UTF-8. 
 - Séparer les noms des fichiers, des images des classes et id CSS par des tirets (`.slide-info`, `styles-ie.css`, `jquery-2.0.min.css`, etc), sauf convention contraire apportée par le client.
 - Les noms d'éléments et des attributs sont rédigés en minuscules,
 - Les éléments sont imbriqués correctement,
@@ -20,7 +21,7 @@ Le doctype HTML5 est fortement recommandé.
 
 ## Langue
 
-La langue de la page est systématiquement renseignée via un attribut dans l’élément `<html>` :
+La langue de la page est renseignée via un attribut dans l’élément `<html>` :
 
 ```html
 <html lang="fr"></html>
@@ -28,7 +29,7 @@ La langue de la page est systématiquement renseignée via un attribut dans l’
 
 ## Encodage
 
-L’encodage du document (en UTF-8) est systématiquement renseigné via un élément meta placé dans le `<head>` avant le title:
+L’encodage du document (en UTF-8) est renseigné via un élément meta placé dans le `<head>` avant le title:
 
 ```html
 <meta charset="UTF-8" />
@@ -36,7 +37,7 @@ L’encodage du document (en UTF-8) est systématiquement renseigné via un él�
 
 ## Titre de la page
 
-Le titre de page, différent à chaque page, est systématiquement renseigné via un élément `<title>` dans le `<head>` :
+Le titre de page, différent à chaque page, est renseigné via un élément `<title>` dans le `<head>` :
 
 ```html
 <title>Titre significatif du contenu de la page</title>
@@ -62,22 +63,29 @@ Source : [http://realfavicongenerator.net/](http://realfavicongenerator.net/)
 
 ## Sémantique structurelle 
 
-Les éléments HTML5 `<header>`, `<article>`, `<main>`, `<footer>`, `<aside>`, `<section>` et `<nav>` sont privilégiés aux éléments neutres `<div>` si leur fonction s’y prête.
+Les éléments HTML5 `<header>`, `<article>`, `<main>`, `<footer>`, `<aside>`, `<section>` et `<nav>` sont privilégiés aux éléments neutres `<div>` si leur fonction s’y prête. 
 
-La structure globale préconisée est celle-ci :
-
-- `<body>` : corps de page et du site web 
-- `<header id="header" role="banner">` : entête global, comportant souvent la navigation et des éléments qui se retrouvent en commun sur (quasiment) toutes les pages
-- `<main id="main" role="main">` : conteneur général du contenu principal, typiquement ce qui n'est pas dans header et footer
-- `<footer id="footer" role="contentinfo">` : pied de page global comportant des éléments qui se retrouvent en commun sur (quasiment) toutes les pages  
-- `<aside class="aside" role="complementary">` : barre latérale globale. Note : `<aside>` doit pouvoir être extrait de la page sans poser de problème, en clair ne pas y placer la navigation par exemple.
-- `<nav id="navigation" role="navigation">` : navigation principale
-- `<form id="search" role="search">` : recherche principale
+- __`<body>`__  
+Corps du document: toute la page Web. La balise racine html ne possède que 2 enfants: `<head>` et `<body>`. Le `<head>` n'affiche aucun contenu si ce n'est le `<title>` qui s'affiche sur l'onglet du navigateur. 
+- __`<header role="banner">`__  
+Entête globale, comportant souvent la navigation et des éléments qui se retrouvent en commun sur (quasiment) toutes les pages
+- __`<main role="main">`__  
+ Contenu principal, typiquement ce qui n'est pas dans header et footer.
+- __`<footer role="contentinfo">`__  
+Pied de page comportant des éléments qui se retrouvent en commun sur (quasiment) toutes les pages  
+- __`<aside role="complementary">`__  
+Un contenu complémentaire.  
+Doit pouvoir être extrait de la page sans poser de problème.
+- __`<nav role="navigation">`__  
+Navigation principale
+- __`<form role="search">`__  
+Formulaire de recherche
 
 __En savoir plus sur la sémantique structurelle__
 https://www.w3.org/WAI/tutorials/page-structure/
 
-
+__En savoir plus sur le modèle de contenus HTML__
+https://toscaconsultants.fr/accessibilite-numerique/notes-techniques/modele-de-contenu-des-elements-html
 #### Menu de navigation
 
 Utiliser des combinaisons `<ul><li>` (liste non ordonnée) pour structurer les menus de navigation dans un élément `<nav role="navigation”>`.
@@ -92,7 +100,7 @@ Installer cette extension pour Chrome et faites afficher la table des matières 
 
 ### Sémantique des éléments
 - Utiliser les éléments HTML pour leur fonction/sémantique et non pas pour leur forme.
-- Les textes doit être lus et analysés afin d'identifier les contenus dont on peut préciser la nature à l'aide d'un élément et de ses attributs.
+- __Les textes doit être lus et analysés afin d'identifier les contenus dont on peut préciser la nature à l'aide d'un élément et de ses attributs.__
 
 __Exemples:__  
 - une citation (de Amanda Gorman)
