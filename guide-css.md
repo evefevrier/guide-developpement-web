@@ -12,23 +12,23 @@ Aucun commentaire, ni même un saut de ligne, ne doit être présent avant cette
 @charset "UTF-8";
 ```
 
-### "Reset" de la feuille de styles des navigateurs
+### Collaborer avec la feuille de styles des navigateurs
 
-Un "reset" CSS permettant d'harmoniser les styles par défaut des navigateurs est systématiquement appliqué 
-en début de projet.
+Au lieu d'un "hard reset", nous utilisons [normalize](https://necolas.github.io/normalize.css/) pour harmoniser les styles par défaut des navigateurs.
 
 ### Un seul fichier CSS est relié aux documents HTML (ou 2!)  
-Une division modulaire des styles en plusieurs fichiers est souhaitée.  
-Cependant, pour assembler (et minifier) ces différents fichiers en un seul, l'usage d'un pré-processeur tel que __sass__ est requis.  
+Une division modulaire des styles est souhaitée.  
+Préférablement les modules seront des fichiers séparés avec l'extension css ou scss.
+Cependant, pour assembler (et minifier) différents fichiers en un seul, l'usage d'un pré-processeur tel que __sass__ est requis.  
 L'instruction `@import` en CSS n'est pas une bonne alternative à sass, car elle a un impact négatif sur la performance.   
 
-Aussi, en attendant de faire l'apprentissage de sass, 2 fichiers .css seront prescrits:   
-(1) la feuille de styles de réinitialisation "normalize-v8.css"  
-(2) la feuille de styles principale nommée "styles.css"  
-Chacun de ces fichiers seront reliés au document HTML par une balise `link`.  
-L'ordre est important, le *reset* doit être relié avant "styles.css".
+Aussi, en attendant de faire l'apprentissage de sass, 2 fichiers .css sont prescrits:   
+(1) la feuille de styles de réinitialisation __"normalize.css"__  
+(2) la feuille de styles principale __"style.css"__  
+Chacun de ces fichiers sera relié au document HTML par une balise `link`.  
+L'ordre est important, le *reset* doit être relié avant "style.css".
 
-### Des commentaires structurants subdivisent le fichier "styles.css"    
+### Des commentaires structurants subdivisent le fichier "style.css"    
 (1) `/* POLICES LIÉES */`  
 (2) `/* UTILITAIRES */`  
 Nous placerons ici le modèle de boîte à utiliser (border-box) et quelques classes d'usage courant comme *clearfix*   
@@ -112,7 +112,7 @@ Exemple: ``.menu`` ou ``.nav`` sera appliqué sur la balise ``nav`` de la naviga
 Les __éléments__ sont des balises contextuelles(descendantes) à un __bloc__.  
 La syntaxe consiste à séparer le nom du __bloc__ du nom d'__élément__ par 2 caractères de soulignement: __
 
-Exemples: ``.nav__list`` (balise ``ul``), ``.nav__listItem`` (balise ``li``), ``.nav__link`` (balise ``a``)
+Exemples: ``.nav__list`` (balise ``ul``), ``.nav__list-item`` (balise ``li``), ``.nav__link`` (balise ``a``)
 
 #### MODIFICATEURS 
 Un modificateur indique un changement d'état d'un __bloc__ ou d'un __élément__. 
@@ -125,17 +125,15 @@ Exemples:
 
 #### Séparateur
 Dans le cas où le nom du __bloc__ ou le nom de l'__élément__ peut difficilement être résumé de manière significative 
-par un seul mot, on privilégiera le *CamelCase* plutôt qu'un tiret pour éviter la confusion entre simple tiret 
-et les double-tirets des __modificateurs__.
+par un seul mot, on utilisera un tiret.
 
-Exemple:       
-``.nav__listItem`` plutôt que ``.nav__list-item`` 
+Exemple:       ``.nav__list-item`` 
 
 
 
 ## Mobile d'abord (Mobile First)
 Les règles sont d'abord écrites pour un affichage sur des appareils mobiles à écran étroit, puis, 
-immédiatement après, on placera les alternatives (*media queries*) pour des écrans plus larges. 
+__immédiatement après, on placera les alternatives (*media queries*) pour des écrans plus larges__. 
 Ainsi, les différentes alternatives pour un même élément sont toujours déclarées dans leur contexte. 
 
 Exemple:
@@ -165,11 +163,11 @@ La navigation dans le bandeau d'entête
              <img src="images/logo-final.png" alt="Accueil (logo À la manière de)">
          </a>
          <ul class="nav__list">
-             <li class="nav__listItem"><a class="nav__link nav__link--active"
+             <li class="nav__list-item"><a class="nav__link nav__link--active"
                                           href="artistes.html">Artistes</a></li>
-             <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
-             <li class="nav__listItem"><a class="nav__link" href="ressources.html">Ressources</a></li>
-             <li class="nav__listItem"><a class="nav__link" href="a-propos.html">À&nbsp;propos</a></li>
+             <li class="nav__list-item"><a class="nav__link" href="blogue.html">Blogue</a></li>
+             <li class="nav__list-item"><a class="nav__link" href="ressources.html">Ressources</a></li>
+             <li class="nav__list-item"><a class="nav__link" href="a-propos.html">À&nbsp;propos</a></li>
          </ul>
      </nav>
 ```
@@ -177,10 +175,10 @@ La navigation dans le pied de page
 ```html
     <nav class="nav nav--footer">
         <ul class="nav__list">
-            <li class="nav__listItem"><a class="nav__link nav__link--active" href="artistes.html">Artistes</a></li>
-            <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
-            <li class="nav__listItem"><a class="nav__link" href="ressources.html">Ressources</a></li>
-            <li class="nav__listItem"><a class="nav__link" href="a-propos.html">À&nbsp;propos</a></li>
+            <li class="nav__list-item"><a class="nav__link nav__link--active" href="artistes.html">Artistes</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="blogue.html">Blogue</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="ressources.html">Ressources</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="a-propos.html">À&nbsp;propos</a></li>
         </ul>
     </nav>
 ```  
