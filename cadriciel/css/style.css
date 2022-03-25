@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * @author Prénom Nom courriel
+ * @author COLLECTIF - @TIMCSF
  *
  * TABLE DES MATIERES
  * Normalize
@@ -57,7 +57,7 @@ aside h3 {
         padding-top: 0;
     }
 
-    .cols_7_de_12 {
+    .cols7de12 {
         width: 59.5%;
     }
 }
@@ -165,7 +165,7 @@ dd ul {
 }
 
 dt::before {
-    background-image: url(../images/css-file-outline_icon-icons.com_57592.png);
+    background-image: url(../images/css-file-outlineicon-icons.com57592.png);
     background-size: contain;
     display: inline-block;
     content: "";

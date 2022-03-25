@@ -60,10 +60,7 @@
     .cols_11_de_12 {
         flex-basis: 91.5%;
     }
-    /* La dernière classe est commenté car inutile...
-       simplement utiliser
-       un élément block pour obtenir une largeur de 100% */
-    /*    .cols_12_de_12 {
+    .cols_12_de_12 {
         flex-basis: 100%;
-    }*/
+    } 
 }
