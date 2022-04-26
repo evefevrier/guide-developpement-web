@@ -55,12 +55,10 @@
 ---
 
 ## CSS
-- [ ] Les règles de styles sont consignées dans une seule feuille de style externe
 - [ ] L'instruction __@charset "UTF-8";__ est placée sur la première ligne du fichier
 - [ ] La feuille de style de réinitialisation précède l'ensemble des règles 
-- [ ] La charte typo de base est présentée sous le sélecteur :root
-- [ ] Les tailles de typo sont en em, rem ou vw
-- [ ] La feuille de styles est valide selon https://jigsaw.w3.org/css-validator/
+- [ ] Les tailles de typo sont en rem, em ou vw
+- [ ] Les variables du projet sont présentées sous le sélecteur :root
 
 ### Lisibilité
 - [ ] La feuille de style est ordonnée en fonction des affinités et de la hiérarchie du contenu 
