@@ -9,20 +9,21 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 ---
 
 ## HTML5
-- <https://developer.mozilla.org/fr/docs/Web/HTML/Element> (en français)
-- <https://html.spec.whatwg.org/> (version anglaise des spécifications - Living Standard)
-- <http://caniuse.com/> (tableaux de support)
-- <https://html5please.com> (rechercher une fonctionnalité pour voir si elle est supportée)
+- [Référence des éléments HTML sur MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
+- [Version anglaise des spécifications HTML](https://html.spec.whatwg.org/)
+Pour vérifier le support des fonctionnalités:    
+- [CANIUSE](http://caniuse.com/) 
+- [html5please](https://html5please.com) 
 
 ---
 
 ## Accessibilité
+- [Guide d'accessibilité en français](https://www.accede-web.com/notices/html-et-css/)
+- [A11y Style Guide](http://a11y-style-guide.com/style-guide/)
+- [_HTML5 Accessibility_ - Tableaux de compatibilité](http://www.html5accessibility.com/)
 
-- <https://www.accede-web.com/notices/html-et-css/> AccedeWeb
-- <http://www.html5accessibility.com/> Tableaux de compatibilité
-- <https://bitsofco.de/the-accessibility-cheatsheet/> Cheatsheet résumée
-- <http://a11y-style-guide.com/style-guide/> 
-- <https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc> UX Design
+[//]: # (- <https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc>)
+[//]: # (- <https://bitsofco.de/the-accessibility-cheatsheet/> )  
 
 ### Couleurs
 
@@ -46,7 +47,7 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 - [Guide flexbox en français](http://www.vincent-valentin.name/articles/le-petit-flexbox-illustre)
 
 ### Grids
-- [Les grilles « CSS Grid Layout »](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Grids>
+- [Les grilles « CSS Grid Layout »](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Grids)
 - [Learn CSS Grid](https://learncssgrid.com/)
 - [Bac à sable de Mozilla](https://mozilladevelopers.github.io/playground/)
 - [Grid by example - Rachel Andrew](https://gridbyexample.com/)
@@ -54,7 +55,7 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 
 ### RWD Responsive Web Design
 
-- [Cas d'utilisation des images réactives](http://dev.opera.com/articles/responsive-images/)  
+- [Cas d'utilisation des images réactives](http://dev.opera.com/articles/responsive-images/)    
 Dimensions de la plupart des écrans:  
 - <https://www.screensizemap.com/> 
 - <http://screensiz.es/>
