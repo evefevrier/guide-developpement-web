@@ -50,7 +50,7 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 - [Learn CSS Grid](https://learncssgrid.com/)
 - [Bac à sable de Mozilla](https://mozilladevelopers.github.io/playground/)
 - [Grid by example - Rachel Andrew](https://gridbyexample.com/)
-- [Outil pour tester les propriétés de grilles](https://alialaa.github.io/css-grid-cheat-sheet/) Cheatsheet CSS Grid
+- [Outil pour tester les propriétés de grilles](https://alialaa.github.io/css-grid-cheat-sheet/) 
 
 ### RWD Responsive Web Design
 
@@ -76,7 +76,8 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 ### Remplissage 
 
 - Texte :
-  - [schnaps.it, outil de AlsaCreations: faux texte et gabarits de mise en page](https://schnaps.it/)
+  - [schnaps.it](https://schnaps.it/)  
+    Outils de AlsaCreations: faux texte et gabarits de mise en page.  
   - [loripsum.net](https://loripsum.net/)
 - Images :
   - [Photos de Picsum](https://picsum.photos/)
@@ -87,16 +88,16 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
  
 
 ### Banque d'images
-
-- <https://search.creativecommons.org/ Un outil de recherche>
-- <https://pixabay.com/>
-- <https://www.pexels.com/>
-- <https://unsplash.com/>
-- <http://www.publicdomainpictures.net>
-- <https://www.reshot.com/>
-- <http://picmelon.com/>
-- <https://fr.123rf.com/>
-- <https://www.istockphoto.com/fr>
+@todo : Distinguer les gratuites des payantes  
+- [Search.creativecommons](https://search.creativecommons.org)
+- [Pixabay](https://pixabay.com)
+- [Pexels](https://www.pexels.com)
+- [Unsplash](https://unsplash.com)
+- [Publicdomainpictures](http://www.publicdomainpictures.net)
+- [Reshot](https://www.reshot.com)
+- [Picmelon](http://picmelon.com)
+- [123rf](https://fr.123rf.com)
+- [istockphoto](https://www.istockphoto.com/fr)
 
  ---
 
