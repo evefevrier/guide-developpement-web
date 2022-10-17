@@ -11,9 +11,9 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 ## HTML5
 - [Référence des éléments HTML sur MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 - [Version anglaise des spécifications HTML](https://html.spec.whatwg.org/)  
-Pour vérifier le support des fonctionnalités:      
-- [CANIUSE](http://caniuse.com/) 
-- [html5please](https://html5please.com) 
+- Pour vérifier le support des fonctionnalités:      
+  - [CANIUSE](http://caniuse.com/) 
+  - [html5please](https://html5please.com) 
 
 ---
 
@@ -55,9 +55,9 @@ Pour vérifier le support des fonctionnalités:
 ### RWD Responsive Web Design
 
 - [Cas d'utilisation des images réactives](http://dev.opera.com/articles/responsive-images/)    
-Dimensions de la plupart des écrans:  
-- <https://www.screensizemap.com/> 
-- <http://screensiz.es/>
+- Dimensions de la plupart des écrans:  
+  - <https://www.screensizemap.com/> 
+  - <http://screensiz.es/>
 
 [//]: # (### Frameworks CSS)
 
