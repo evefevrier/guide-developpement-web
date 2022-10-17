@@ -1,5 +1,5 @@
 # Ressources et liens utiles
-
+Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en commentant celles-ci et en suggérant d'autres ressources. L'objectif est de recenser les **meilleures** et principales sources d'information pour les apprentissages en ligne dans les communautés de pratique. L'ordre et la présentation de ces ressources pourraient aussi faire l'objet d'une réflexion et d'une amélioration pour en faciliter l'usage.
   
 ## HTML5
   - https://developer.mozilla.org/fr/docs/Web/HTML/Element (en français)
@@ -37,7 +37,7 @@
   - http://www.publicdomainpictures.net 
   - https://www.reshot.com/ 
   - http://picmelon.com/ 
-  - https://fr.123rf.com/ [i1_enonce_projetfinal_a2021.pdf](https://github.com/evefevrier/guide-developpement-web/files/7817075/i1_enonce_projetfinal_a2021.pdf)
+  - https://fr.123rf.com/  
 
   - https://www.istockphoto.com/fr 
 
@@ -73,38 +73,39 @@ Le remplissage par du contenu temporaire peut faire appel à _Lorem Ipsum_.
 - <https://alialaa.github.io/css-grid-cheat-sheet/> Cheatsheet CSS Grid
 - <https://www.mozilla.org/en-US/developer/css-grid/>
 
-### Variables CSS
-
-- <https://ishadeed.com/article/css-vars-101/>
 
 ### RWD Responsive Web Design
- 
+
 - <https://www.screensizemap.com/> dimensions de la plupart des écrans
- 
+
 ### Images réactives, retina et hdpi
 
 - <http://net.tutsplus.com/tutorials/html-css-techniques/the-right-way-to-retinafy-your-websites/>
 - <http://screensiz.es/>
 - <http://dev.opera.com/articles/responsive-images/> Cas d'utilisation des images réactives
 
-### Frameworks CSS
 
+### Variables CSS
+
+- <https://ishadeed.com/article/css-vars-101/>
+
+### Frameworks CSS
 - <http://twitter.github.io/bootstrap/> Bootstrap (par Twitter)
 - <http://purecss.io/> Pure (Yahoo)
 - <http://designmodo.github.io/Flat-UI/> Flat UI
 ---
-## Sites d'actualités, tutoriels
-
+## Communautés de pratique en développement Web
+- <https://stackoverflow.com>
+- <https://github.com>
 - <https://css-tricks.com/>
-- <https://www.smashingmagazine.com/> 
+- <https://www.smashingmagazine.com/>
 
-## Documentations générales rapides
- 
-- <http://devdocs.io/>
-- <http://wwwhere.io/> 
-- <https://platform.html5.org/> 
+---
+## Performance et portabilité
 
-
-## Compatibilité navigateur
+### Compatibilité navigateur
 
 - <http://caniuse.com/> (tableaux de support) 
+- <https://html5please.com> (rechercher une fonctionnalité pour voir si elle est supportée)
+
+
