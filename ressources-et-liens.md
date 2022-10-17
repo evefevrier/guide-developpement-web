@@ -10,8 +10,8 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 
 ## HTML5
 - [Référence des éléments HTML sur MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
-- [Version anglaise des spécifications HTML](https://html.spec.whatwg.org/)
-Pour vérifier le support des fonctionnalités:    
+- [Version anglaise des spécifications HTML](https://html.spec.whatwg.org/)  
+Pour vérifier le support des fonctionnalités:      
 - [CANIUSE](http://caniuse.com/) 
 - [html5please](https://html5please.com) 
 
@@ -26,10 +26,9 @@ Pour vérifier le support des fonctionnalités:
 [//]: # (- <https://bitsofco.de/the-accessibility-cheatsheet/> )  
 
 ### Couleurs
-
-- <https://color.adobe.com/create/color-wheel/>
-- <http://chromelens.xyz/> Extension pour visualiser en daltonisme
-- <http://colorsafe.co/>
+- [Vérificateur de contraste](https://webaim.org/resources/contrastchecker/)
+- [Roue chromatique et outils a11y de Adobe Color](https://color.adobe.com/create/color-wheel/)
+- [ColorSafe.co](http://colorsafe.co/)
 
 ### Outil de tests et évaluations
 
