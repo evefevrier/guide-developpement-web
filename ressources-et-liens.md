@@ -4,7 +4,7 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 ## Communautés de pratique en développement Web
 - <https://stackoverflow.com>
 - <https://github.com>
-- <https://www.smashingmagazine.com/>
+- <https://www.smashingmagazine.com>
 
 ---
 
@@ -73,18 +73,17 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 
 ## Contenus
 
-### Remplissage
-Le remplissage par du contenu temporaire peut faire appel à _Lorem Ipsum_.
+### Remplissage 
 
-- Pour le texte :
+- Texte :
   - [schnaps.it, outil de AlsaCreations: faux texte et gabarits de mise en page](https://schnaps.it/)
   - [loripsum.net](https://loripsum.net/)
-- Pour les images :
-  - [Photos généralistes de Picsum](https://picsum.photos/)
+- Images :
+  - [Photos de Picsum](https://picsum.photos/)
   - [Visages de DiverseUI](http://www.diverseui.com/)
   - [Visages de tinyfac.es](https://tinyfac.es/)
   - [Avatars de UIfaces](https://uifaces.co/)
-  - [Chats de PlaceKitten](http://placekitten.com/)
+  - [Chatons de PlaceKitten](http://placekitten.com/)
  
 
 ### Banque d'images
@@ -97,7 +96,6 @@ Le remplissage par du contenu temporaire peut faire appel à _Lorem Ipsum_.
 - <https://www.reshot.com/>
 - <http://picmelon.com/>
 - <https://fr.123rf.com/>
-
 - <https://www.istockphoto.com/fr>
 
  
