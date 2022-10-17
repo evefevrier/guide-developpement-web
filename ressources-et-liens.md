@@ -2,9 +2,10 @@
 Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en commentant celles-ci et en suggérant d'autres ressources. L'objectif est de recenser les **meilleures** et principales sources d'information pour les apprentissages en ligne dans les communautés de pratique. L'ordre et la présentation de ces ressources pourraient aussi faire l'objet d'une réflexion et d'une amélioration pour en faciliter l'usage.
 
 ## Communautés de pratique en développement Web
-- <https://stackoverflow.com>
-- <https://github.com>
-- <https://www.smashingmagazine.com>
+- [StackOverFlow](https://stackoverflow.com)
+- [Github](https://github.com)
+- [AlsaCreations, une communauté francophone](https://www.alsacreations.com)
+- [SmashingMagazine](https://www.smashingmagazine.com)
 
 ---
 
@@ -12,7 +13,7 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 - [Référence des éléments HTML sur MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 - [Version anglaise des spécifications HTML](https://html.spec.whatwg.org/)  
 - Pour vérifier le support des fonctionnalités:      
-  - [CANIUSE](http://caniuse.com/) 
+  - [CanIUse](http://caniuse.com/) 
   - [html5please](https://html5please.com) 
 
 ---
@@ -25,13 +26,17 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 [//]: # (- <https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc>)
 [//]: # (- <https://bitsofco.de/the-accessibility-cheatsheet/> )  
 
+### Composants accessibles (accordéon, onglets, ...)
+- <https://www.w3.org/WAI/ARIA/apg/patterns/>
+- <https://www.aditus.io/patterns/accordion/>
+- <https://van11y.net/fr/onglets-accessibles/>
+
 ### Couleurs
 - [Vérificateur de contraste](https://webaim.org/resources/contrastchecker/)
 - [Roue chromatique et outils a11y de Adobe Color](https://color.adobe.com/create/color-wheel/)
 - [ColorSafe.co](http://colorsafe.co/)
 
 ### Outil de tests et évaluations
-
 - [Validateur HTML du w3c](https://validator.w3.org/)
 - [Extension Wave pour évaluer l'accessibilité](https://wave.webaim.org/extension/)
 
@@ -50,7 +55,8 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 - [Learn CSS Grid](https://learncssgrid.com/)
 - [Bac à sable de Mozilla](https://mozilladevelopers.github.io/playground/)
 - [Grid by example - Rachel Andrew](https://gridbyexample.com/)
-- [Outil pour tester les propriétés de grilles](https://alialaa.github.io/css-grid-cheat-sheet/) 
+- [Outil pour tester les propriétés de grilles](https://alialaa.github.io/css-grid-cheat-sheet/)
+- [Générateur de grille](https://cssgrid-generator.netlify.app/)
 
 ### RWD Responsive Web Design
 
@@ -89,11 +95,11 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
 
 ### Banque d'images
 @todo : Distinguer les gratuites des payantes  
-- [Search.creativecommons](https://search.creativecommons.org)
+- [Search.CreativeCommons](https://search.creativecommons.org)
 - [Pixabay](https://pixabay.com)
 - [Pexels](https://www.pexels.com)
 - [Unsplash](https://unsplash.com)
-- [Publicdomainpictures](http://www.publicdomainpictures.net)
+- [PublicDomainPictures](http://www.publicdomainpictures.net)
 - [Reshot](https://www.reshot.com)
 - [Picmelon](http://picmelon.com)
 - [123rf](https://fr.123rf.com)
