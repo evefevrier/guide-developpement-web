@@ -1,0 +1,73 @@
+/** 
+ * Choix des polices
+ * 
+ *'Roboto', sans-serif; 
+    *'Roboto Medium', sans-serif;
+    *'Roboto Thin', sans-serif;
+    *'Roboto Black', sans-serif;
+ *'Montserrat', sans-serif; 
+ *'DM Serif Display', serif;
+ *'Libre Baskerville', serif; 
+    *'Libre Baskerville Italic', serif; 
+    *'Libre Baskerville Bold', serif;
+ *'Bilbo Swash Caps', cursive; 
+ *'Merienda One', cursive; 
+ *  
+*/
+ 
+/* Roboto */
+@font-face {
+    font-family:'Roboto';
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:'Roboto Medium';
+    src: url(Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family:'Roboto Thin';
+    src: url(Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family:'Roboto Black';
+    src: url(Roboto/Roboto-Black.ttf);
+}
+
+/* Montserrat */
+@font-face {
+    font-family:'Montserrat Thin';
+    src: url(Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+/* DM Serif Display */
+@font-face {
+    font-family:'DM Serif Display', serif;
+    src: url(DM_Serif_Display/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Libre Baskerville */
+@font-face {
+    font-family:'Libre Baskerville', serif;
+    src: url(Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+@font-face {
+    font-family: 'Libre Baskerville Italic', serif;
+    src: url(Libre_Baskerville/LibreBaskerville-Italic.ttf);
+}
+@font-face {
+    font-family: 'Libre Baskerville Bold', serif;
+    src: url(Libre_Baskerville/LibreBaskerville-Bold.ttf);
+}
+
+/* Bilbo Swash Caps */
+@font-face {
+    font-family:'Bilbo Swash Caps', cursive;
+    src: url(Bilbo_Swash_Caps/BilboSwashCaps-Regular.ttf);
+}
+
+/* Merienda One */
+@font-face {
+    font-family:'Merienda One', cursive;
+    src: url(Merienda_One/MeriendaOne-Regular.ttf);
+}
+

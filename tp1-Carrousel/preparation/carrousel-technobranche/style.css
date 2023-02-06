@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/**
+ * Description: Carrousel de photos
+ * Version: 1.0 pour TechnoBranché 2023
+ * Cette feuille de style est libre de droits.
+ * Sections:
+ *     Variables à modifier
+ *     Grilles
+ *     Boutons
+ *     Accessibilité
+ *     Hyperliens
+ */
+
+
+/* Variables */
+:root {
+   /** Choix de polices:   
+    *'Roboto', sans-serif; 
+        *'Roboto Medium', sans-serif;
+        *'Roboto Thin', sans-serif;
+        *'Roboto Black', sans-serif;
+    *'Montserrat', sans-serif; 
+    *'DM Serif Display', serif;
+    *'Libre Baskerville', serif; 
+        *'Libre Baskerville Italic', serif; 
+        *'Libre Baskerville Bold', serif;
+    *'Bilbo Swash Caps', cursive; 
+    *'Merienda One', cursive; 
+    */
+    --police: 'Roboto', sans-serif; 
+    --police-titre: 'Roboto Medium', sans-serif;
+    --police-sous-titre: 'Roboto Thin', sans-serif;
+    /* couleurs */
+    --couleur-titre: #191f3a;
+    --couleur-sous-titre: #191f3a;
+    --couleur-bas-de-vignette: #ffffff;
+    --couleur-texte-footer: #ffffff;
+    --bg-couleur-header-footer: #191f3a;
+    --bg-couleur-depart: #ffffff;
+    --bg-couleur-fin: #f2f0de;
+    --couleur-bouton: #bc6d28;
+    --couleur-bouton-hover: #fc7803;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Grilles */
+body {
+    font-family: var(--police);
+    background: var(--bg-couleur-depart);
+    background: linear-gradient(180deg, var(--bg-couleur-depart) 0%, var(--bg-couleur-depart) 50%, var(--bg-couleur-fin) 100%);
+    display: grid;
+    grid-template-columns: minmax(1em, 0.5fr) minmax(400px, 1000px) minmax(1em, 0.5fr);
+    grid-template-rows: 250px 1fr 50px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--police-titre);
+    color:var(--couleur-titre);
+    font-size: 4em;
+    letter-spacing: 3px;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: var(--police-sous-titre);
+    color: var(--couleur-sous-titre);
+    font-size: 1.5em;
+}
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+p.logo,
+footer {
+    background-color: var(--bg-couleur-header-footer);
+}
+
+p.logo {
+    margin: 0;
+    text-align: left;
+    padding: 1em;
+}
+
+.logo img {
+    display: inline-block;
+    width: 150px;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    align-self: flex-start;
+    grid-template-columns: 50px 1fr 50px;
+    padding-bottom: 5em;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-template-columns: 80px 1fr 80px;
+    }
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    color: var(--couleur-texte-footer);
+    padding: 1em;
+}
+
+figure {
+    margin: 0;
+    grid-column: 2 / 3;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-couleur-header-footer);
+    color: var(--couleur-bas-de-vignette);
+    padding: 5px;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Boutons */
+.bouton {
+    background-color: transparent;
+    border: none;
+    display: block;
+    grid-row: 1/2;
+    transition: all 0.3s ease-in-out;
+}
+
+.bouton:hover {
+    cursor: pointer;
+}
+
+.bouton--precedent {
+    grid-column: 1 / 2;
+}
+
+.bouton--suivant {
+    grid-column: 3 / 4;
+}
+
+.bouton__svg {
+    fill: var(--couleur-bouton);
+    transition: all 0.3s ease-in-out;
+}
+
+.bouton:hover .bouton__svg {
+    fill: var(--couleur-bouton-hover);
+    transform: scale(1.03);
+}
+
+.bouton:focus {
+    outline: 1px solid var(--couleur-bouton);
+}
+
+.bouton:focus .bouton__svg {
+    fill: var(--couleur-bouton-hover);
+    transform: scale(1.03);
+}
+
+/* Accessibilité */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* Hyperliens */
+a,
+a:link,
+a:visited {
+    color: var(--police-couleur-principale);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--button-color-hover);
+}

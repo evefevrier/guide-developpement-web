@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Cadriciel TIMCSF - 2022 - v.0.3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="demo">
+    <!-- lien rapide pour aller au contenu -->
+    <a href="#main" class="screen-reader-only focusable">Allez au contenu</a>
+
+    <!-- le header étant un élément block, il prend la largeur de la fenêtre, il est "bleed" -->
+    <header role="banner">
+        <!-- la classe conteneur fait le centrage grâce à un max-width et des marges latérales automatiques -->
+        <div class="conteneur">
+            <p class="h1">Entête</p>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 1</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 2</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <!-- remarquer que .nav__link--active est le modificateur de .nav__link
+                    pour mettre en valeur l'item de menu courant -->
+                        <a href="index.html" class="nav__link nav__link--active">Page courante</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 4</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- le <main> est à la fois .conteneur (centrage) et .rangee (conteneur flex de base) -->
+    <main class="conteneur rangee" role="main" id="main">
+        <!-- la classe description est une classe décrivant le contexte -->
+        <div class="cols_7_de_12 description">
+            <!-- est-ce que cette classe h2 serait préférablement nommée description__h2 ? -->
+            <h1 class="h2">Architecture des CSS</h1>
+            <p>Quelques explications de la division des styles en plusieurs fichiers <code>.css</code>. <br>L'ordre de
+                présentation est celui de la cascade à respecter.</p>
+            <dl>
+                <dt>normalize.css</dt>
+                <dd>Styles pour normaliser l'affichage des éléments <abbr
+                        title="HyperText MarkUp Language 5">html5</abbr>.
+                    <br> Ce fichier est une bibliothèque du domaine public. Il est sujet à des mises à jour fréquentes.
+                    On
+                    doit pouvoir remplacer le fichier sans affecter les styles du projet donc on <strong
+                        class="purple">ne
+                        doit pas</strong> modifier le contenu de ce fichier.
+                </dd>
+                <dt>utilitaires.css</dt>
+                <dd>
+                    <ul>
+                        <li>Variables du projet comme la palette de couleurs, &hellip;;</li>
+                        <li>Règles ou classes qu’on réutilise d’un projet à l’autre mais qui ne sont pas reliés aux
+                            grilles
+                            de mise en page comme par exemples le clearfix, le box-sizing, &hellip;;
+                        </li>
+                        <li>Styles de base comme img, figure, abbr[title], &hellip;</li>
+                    </ul>
+                    Ce fichier <strong class="purple">peut</strong> être adapté pour chaque projet.
+                </dd>
+                <dt>typo.css</dt>
+                <dd>La charte typographique inclut:
+                    <ul>
+                        <li>Les déclarations de polices @font-face;</li>
+                        <li>La hiérarchie responsive des titres h1-h6;</li>
+                        <li>La direction visuelle des titres spécifique au projet.</li>
+                    </ul>
+                    Ce fichier <strong class="purple">doit</strong> être adapté pour chaque projet.
+                </dd>
+                <dt>grille.css</dt>
+                <dd>Les classes réutilisables pour établir les grilles de mise en page. <br>
+                    Ce fichier <strong class="purple">peut</strong> être adapté pour chaque projet.
+                </dd>
+                <dt>style.css</dt>
+                <dd>Feuille de style principale, importe les précédents fichiers et permet de définir les styles
+                    spécifiques au projet qui ne cadrent pas dans les fichiers précédents.
+                    <br>Ce fichier <strong class="purple">doit</strong> être adapté pour chaque projet.
+                </dd>
+            </dl>
+        </div>
+        <aside class="cols_5_de_12">
+            <h2>Style de codage</h2>
+            <div class="infos">
+                <h3>Cadriciel évolutif</h3>
+                <p>Afin de faciliter le travail d'une équipe, de <em><i lang="en">bootstrap</i>per</em> et de maintenir
+                    des
+                    projets, un cadriciel est utile. Celui-ci vous est proposé comme point de départ. Il faudra le faire
+                    évoluer.</p>
+
+            </div>
+        </aside>
+    </main>
+    <footer role="contentinfo">
+        <div class="conteneur">
+            <p>Pied de page</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

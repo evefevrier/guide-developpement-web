@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/**
+ * Carrousel W3C @author Eric Eggert for W3C 
+ * Source: https://www.w3.org/WAI/tutorials/carousels/
+ * Adaptation @author Ève Février
+ **/
+
+/******** Utilitaires ********/
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+    /* box-sizing: border-box; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Images fluides */
+img {
+    max-width: 100%;
+}
+
+/** Accessibilité
+  * Pour cacher visuellement tout en gardant accessible un contenu:
+  * screen-reader-only ou visuallyhidden **/
+.screen-reader-only,
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/******** Styles du Carrousel ********/
+
+.active .slide {
+    display: block !important;
+    visibility: hidden;
+    transition: left .6s ease-out;
+}
+
+.active .slide.current {
+    visibility: visible;
+    left: 0;
+}
+
+.active .slide.next {
+    left: 100%;
+}
+
+.active .slide.prev {
+    left: -100%;
+}
+
+.active .slide.next.in-transition,
+.active .slide.prev.in-transition {
+    visibility: visible;
+}
+
+.carousel,
+.slide {
+    width: 480px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel ul {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    height: 360px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 1em;
+    border: 1px solid #333;
+}
+
+.slide h4 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 0;
+    padding: .25em;
+    text-align: right;
+    background-color: rgba(255, 255, 255, .8);
+    float: right;
+    border-radius: 0 0 0 .5em;
+}
+
+.slide p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    clear: both;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.slide a {
+    display: block;
+    text-align: right;
+}
+
+.carousel.active {
+    height: 360px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.active .slide {
+    border: none;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.slide.current {
+    display: block;
+    z-index: 500;
+}
+
+.btn-prev,
+.btn-next {
+    position: absolute;
+    z-index: 700;
+    top: 40%;
+    margin-top: -2.5em;
+    border: 0;
+    background: rgba(255, 255, 255, .6);
+    line-height: 1;
+    padding: 10px 5px;
+    width: 30px;
+    transition: padding .4s ease-out;
+}
+
+.btn-next:hover,
+.btn-next:focus,
+.btn-prev:hover,
+.btn-prev:focus {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-prev {
+    left: 0;
+    border-radius: 0 .25em .25em 0;
+}
+
+.btn-next {
+    right: 0;
+    border-radius: .25em 0 0 .25em;
+}
+
+.carousel.with-slidenav {
+    padding-bottom: 2.5em;
+    background-color: #fff;
+}
+
+.carousel.with-slidenav .slide {
+    border-bottom: 1px solid #333;
+}
+
+.slidenav {
+    position: absolute;
+    bottom: .25em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.slidenav li {
+    display: inline-block;
+    margin: 0 .5em;
+}
+
+.slidenav button {
+    border: 2px solid #036;
+    background-color: #036;
+    line-height: .5;
+    height: 2em;
+    min-width: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.slidenav button.current {
+    border-radius: .5em;
+    background-color: #fff;
+    color: #333;
+}
+
+.slidenav button:hover,
+.slidenav button:focus {
+    border: 2px dotted #fff;
+}
+
+.slidenav button.current:hover,
+.slidenav button.current:focus {
+    border: 2px dotted #036;
+}

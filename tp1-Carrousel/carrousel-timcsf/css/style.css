@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* Importation des polices au tout début! */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Roboto:wght@400;500&display=swap');
+
+/**
+ * @author COLLECTIF - @TIMCSF
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique 
+ * Boutons
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(typo.css);
+
+/* base */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Grilles */
+body {
+    font-family: var(--police);
+    background: var(--bg-couleur-depart);
+    background: linear-gradient(180deg, var(--bg-couleur-depart) 0%, var(--bg-couleur-depart) 50%, var(--bg-couleur-fin) 100%);
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Carrousel */
+.carrousel {
+    position: relative;
+}
+
+.js .carrousel__slide {
+    display: none;
+}
+
+.js .carrousel__slide.carrousel__slide--active {
+    display: block;
+}
+
+
+/* Boutons */
+.js .bouton {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+}
+
+.js .bouton:hover {
+    cursor: pointer;
+}
+
+.js .bouton__svg {
+    fill: var(--couleur-bouton);
+    transition: all 0.3s ease-in-out;
+}
+
+.js .bouton:hover .bouton__svg {
+    fill: var(--couleur-bouton-hover);
+    transform: scale(1.03);
+}
+
+.js .bouton:focus {
+    outline: 1px solid var(--couleur-bouton);
+}
+
+.js .bouton:focus .bouton__svg {
+    fill: var(--couleur-bouton-hover);
+    transform: scale(1.03);
+}
