@@ -7,8 +7,8 @@ Ensemble de règles et bonnes pratiques de développement Web
 [Liste de contrôle](liste-de-controle.md)  
 [Ressources et liens](ressources-et-liens.md)
 
-[Cadriciel](cadriciel/index.html)
-[Démo avec grille.css](cadriciel/demo-grille.html)
+[Cadriciel](cadriciel/index.html)  
+[Démo avec grille.css](cadriciel/demo-grille.html)  
 
 [Hello World de Github - en français](github-hello-world-fr.md)
 
