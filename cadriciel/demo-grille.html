@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démo grille en flexbox</title>
+    <link rel="stylesheet" href="css/style-demo-grille.css">
+</head>
+
+<body>
+    <header>
+        <h1>Démo 1</h1>
+        <h2 class="soustitre conteneur">Sous titre</h2>
+    </header>
+    <div class="conteneur">
+        <div class="accroche cols_8_de_12">
+            <p class="accroche__texte">Une phrase accrochante avec pourquoi pas un bouton d'action
+            </p>
+            <p class="accroche__bouton">
+                <button>Passes à l'action!</button>
+            </p>
+        </div>
+        <!-- div.nouvelles>(article.nouvelle>h2+p)*3 -->
+        <div class="nouvelles rangee">
+            <article class="nouvelle cols_4_de_12">
+                <h2>titre niveau 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consectetur possimus molestiae minus
+                    iure praesentium quisquam, voluptatem officia laudantium cumque eius laboriosam accusamus voluptate
+                    at libero quia laborum veritatis ea?</p>
+            </article>
+            <article class="nouvelle cols_4_de_12">
+                <h2>titre niveau 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consectetur possimus molestiae minus
+                    iure praesentium quisquam, voluptatem officia laudantium cumque eius laboriosam accusamus voluptate
+                    at libero quia laborum veritatis ea?</p>
+            </article>
+            <article class="nouvelle cols_4_de_12">
+                <h2>titre niveau 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consectetur possimus molestiae
+                    minus iure praesentium quisquam, voluptatem officia laudantium cumque eius laboriosam
+                    accusamus voluptate at libero quia laborum veritatis ea?</p>
+            </article>
+        </div>
+    </div> <!-- fin div.conteneur -->
+    <div class="centre rangee">
+        <div class="col_6_de_12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reiciendis
+            quos inventore explicabo non voluptate id illo perferendis voluptas eum quia debitis mollitia rerum facilis
+            architecto aspernatur, quo consequuntur neque!</div>
+        <div class="col_6_de_12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reiciendis
+            quos inventore explicabo non voluptate id illo perferendis voluptas eum quia debitis mollitia rerum facilis
+            architecto aspernatur, quo consequuntur neque!</div>
+    </div><!-- fin div.centre.rangee -->
+    <section class="services conteneur">
+        <h2>titre niveau 2</h2>
+        <div class="rangee">
+            <article class="service cols_4_de_12">
+                <h3 class="service__titre">titre niveau 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In consectetur possimus molestiae minus
+                    iure praesentium quisquam, voluptatem officia laudantium cumque eius laboriosam accusamus voluptate
+                    at libero quia laborum veritatis ea?</p>
+            </article>
+            <article class="service cols_8_de_12">
+                <h3 class="service__titre">titre niveau 3</h3>
+                <ul class="service__listimages flxRow">
+                    <li><img src="https://via.placeholder.com/175 " alt=""></li>
+                    <li><img src="https://via.placeholder.com/175 " alt=""></li>
+                    <li><img src="https://via.placeholder.com/175 " alt=""></li>
+                    <li><img src="https://via.placeholder.com/175 " alt=""></li>
+                    <li><img src="https://via.placeholder.com/175 " alt=""></li>
+                    <li><img src="https://via.placeholder.com/175 " alt=""></li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <footer class="bleed">
+        <p class="conteneur"><small>Description des droits et crédits. Adresse...</small></p>
+    </footer>
+</body>
+
+</html>

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+
 /**
  * @author COLLECTIF - @TIMCSF
  *
@@ -35,7 +37,7 @@
    ========================================================================== */
 @import url(grille.css);
 
-/* Mise en page du DÉMO
+/* Mise en page  
    ========================================================================== */
 body {
     color: var(--couleur-texte);
@@ -164,13 +166,15 @@ dd ul {
 }
 
 dt::before {
-    background-image: url(../images/css-file-outlineicon-icons.com57592.png);
+    background-image: url(../images/css-file-outline.png);
     background-size: contain;
     display: inline-block;
     content: "";
     width: 1.5em;
     height: 1.5em;
     margin: 0 0.5rem;
+    position: relative;
+    top: 4px;
 }
 
 strong.purple {

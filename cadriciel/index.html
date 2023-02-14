@@ -5,61 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Cadriciel TIMCSF - 2022 - v.0.3</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        header {
-            padding: 0;
-        }
-
-        .divConteneur {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
-        }
-
-        main {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        @media (min-width: 800px) {
-            main {
-                width: 80%;
-                max-width: 800px;
-                margin: 2em auto;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="demo">
     <!-- lien rapide pour aller au contenu -->
     <a href="#main" class="screen-reader-only focusable">Allez au contenu</a>
-    <div class="divConteneur">
 
-        <header role="banner">
-            <img src="images/niklas-ohlrogge-UsfhqEHcfP8-unsplash.jpg" alt="">
-        </header>
+    <!-- le header étant un élément block, il prend la largeur de la fenêtre, il est "bleed" -->
+    <header role="banner">
+        <!-- la classe conteneur fait le centrage grâce à un max-width et des marges latérales automatiques -->
+        <div class="conteneur">
+            <p class="h1">Entête</p>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 1</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 2</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <!-- remarquer que .nav__link--active est le modificateur de .nav__link
+                    pour mettre en valeur l'item de menu courant -->
+                        <a href="index.html" class="nav__link nav__link--active">Page courante</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 4</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__link">Lien 5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- le <main> est à la fois .conteneur (centrage) et .rangee (conteneur flex de base) -->
+    <main class="conteneur rangee" role="main" id="main">
+        <!-- la classe description est une classe décrivant le contexte -->
+        <div class="cols_7_de_12 description">
+            <!-- est-ce que cette classe h2 serait préférablement nommée description__h2 ? -->
+            <h1 class="h2">Architecture des CSS</h1>
+            <p>Quelques explications de la division des styles en plusieurs fichiers <code>.css</code>. <br>L'ordre de
+                présentation est celui de la cascade à respecter.</p>
+            <dl>
+                <dt><a href="css/normalize.css">normalize</a> plutôt qu'un <cite lang="en">hard
+                        reset</cite></dt>
+                <dd>Styles pour normaliser l'affichage des éléments <abbr
+                        title="HyperText MarkUp Language 5">html5</abbr>.
+                    <br> Ce fichier est une bibliothèque du domaine public. Il est sujet à des mises à jour.
+                    On
+                    doit pouvoir remplacer le fichier sans affecter les styles du projet donc on <strong
+                        class="purple">ne
+                        doit pas</strong> modifier le contenu de ce fichier.
+                </dd>
+                <dt><a href="css/utilitaires.css">utilitaires</a></dt>
+                <dd>
+                    <ul>
+                        <li>Variables du projet comme la palette de couleurs, &hellip;;</li>
+                        <li>Règles ou classes qu’on réutilise d’un projet à l’autre mais qui ne sont pas reliés aux
+                            grilles
+                            de mise en page comme par exemples le clearfix, le box-sizing, &hellip;;
+                        </li>
+                        <li>Styles de base comme img, figure, abbr[title], &hellip;</li>
+                        <li>Classes pour l'accessibilité: <cite>visuallyhidden</cite> et <cite></cite>focusable</cite>
+                        </li>
+                    </ul>
+                    Ce fichier <strong class="purple">peut</strong> être adapté pour chaque projet.
+                </dd>
+                <dt><a href="css/typo.css">typo</a></dt>
+                <dd>La charte typographique inclut:
+                    <ul>
+                        <li>La stratégie de mise en base décimale du font-size</li>
+                        <li>La hiérarchie responsive des titres h1-h6;</li>
+                        <li>La direction visuelle des titres spécifiques au projet.</li>
+                    </ul>
+                    Ce fichier <strong class="purple">doit</strong> être adapté pour chaque projet.
+                </dd>
+                <dt><a href="css/grille.css">grille</a></dt>
+                <dd>Les classes réutilisables pour établir les grilles de mise en page. <br>
+                    Ce fichier <strong class="purple">peut</strong> être adapté pour chaque projet.
+                    À la base il contient un système de classes de dimensionnement (cols_2_de_12, cols_3_de_12...) qui
+                    permettent de dimensionner les blocs de contenu pour s'aligner sur une grille fluide de 12 colonnes.
+                </dd>
+                <dt><a href="css/typo.css">style</a></dt>
+                <dd>Feuille de style principale, importe les précédents fichiers et permet de définir les styles
+                    spécifiques au projet qui ne cadrent pas dans les fichiers précédents.
+                    <strong>L'ordre d'importation est important!</strong>
+                    <br>Ce fichier <strong class="purple">doit</strong> être adapté pour chaque projet.
+                </dd>
+            </dl>
+        </div>
+        <aside class="cols_5_de_12">
+            <h2>Style de codage</h2>
+            <div class="infos">
+                <h3>Cadriciel évolutif</h3>
+                <p>Afin de faciliter le travail d'une équipe, de <em><i lang="en">bootstrap</i>per</em> et de maintenir
+                    des
+                    projets, un cadriciel est utile. Celui-ci vous est proposé comme point de départ. Il faudra le faire
+                    évoluer.</p>
 
-        <main role="main" id="main">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugit molestias corporis nemo cumque nihil
-            quas
-            quibusdam totam. Est doloremque asperiores eius modi explicabo? Temporibus commodi voluptatem ratione
-            architecto
-            quia!
-        </main>
-
-        <footer role="contentinfo">
-            <p>Bannière : Photo de <a
-                    href="https://unsplash.com/@ohlrogge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Niklas
-                    Ohlrogge</a> sur <a
-                    href="https://unsplash.com/fr/photos/UsfhqEHcfP8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p>
-            <p>© 2023 - Cégep de Sainte-Foy</p>
-        </footer>
-    </div>
+            </div>
+        </aside>
+    </main>
+    <footer role="contentinfo">
+        <div class="conteneur">
+            <p>Pied de page</p>
+        </div>
+    </footer>
     <script src="js/menu.js"></script>
 </body>
 

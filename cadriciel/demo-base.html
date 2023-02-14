@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header {
+            padding: 0;
+        }
+
+        .divConteneur {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        main {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 800px) {
+            main {
+                width: 80%;
+                max-width: 800px;
+                margin: 2em auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- lien rapide pour aller au contenu -->
+    <a href="#main" class="screen-reader-only focusable">Allez au contenu</a>
+    <div class="divConteneur">
+
+        <header role="banner">
+            <img src="images/niklas-ohlrogge-UsfhqEHcfP8-unsplash.jpg" alt="">
+        </header>
+
+        <main role="main" id="main">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit fugit molestias corporis nemo cumque nihil
+            quas
+            quibusdam totam. Est doloremque asperiores eius modi explicabo? Temporibus commodi voluptatem ratione
+            architecto
+            quia!
+        </main>
+
+        <footer role="contentinfo">
+            <p>Bannière : Photo de <a
+                    href="https://unsplash.com/@ohlrogge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Niklas
+                    Ohlrogge</a> sur <a
+                    href="https://unsplash.com/fr/photos/UsfhqEHcfP8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+            <p>© 2023 - Cégep de Sainte-Foy</p>
+        </footer>
+    </div>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
