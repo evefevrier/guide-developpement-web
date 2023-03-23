@@ -86,6 +86,7 @@ Vous pouvez contribuer à augmenter la valeur de cette liste de ressources en co
     Outils de AlsaCreations: faux texte et gabarits de mise en page.  
   - [loripsum.net](https://loripsum.net/)
 - Images :
+  - [Placehold.co](https://placehold.co/)
   - [Photos de Picsum](https://picsum.photos/)
   - [Visages de DiverseUI](http://www.diverseui.com/)
   - [Visages de tinyfac.es](https://tinyfac.es/)
